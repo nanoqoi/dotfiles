@@ -1,0 +1,35 @@
+# Inclusive only
+*
+
+# Root stuff
+.gtkrc-2.0
+.Xresources
+
+# Config files
+!.config
+
+!.config/waybar
+!.config/waybar/*
+
+!.config/hypr
+!.config/hypr/*
+
+!.config/fontconfig
+!.config/fontconfig/*
+
+!.config/gtk-*
+!.config/gtk-*/*
+
+!.config/xsettingsd
+!.config/xsettingsd/*
+
+!.config/kdedefaults
+!.config/kdedefaults/*
+
+!.config/qt6ct
+!.config/qt6ct/*
+
+!.config/scripts
+!.config/scripts/*
+
+!.config/kdeglobals

@@ -12,7 +12,6 @@
     "cpu",
     "memory",
     "temperature",
-    "backlight",
     "battery",
     "clock",
     "tray",
@@ -38,7 +37,8 @@
   },
   "cpu": {
     "format": "{usage}% ",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "plasmawindowed org.kde.plasma.system"
   },
   "memory": {
     "format": "{}% "
@@ -47,10 +47,6 @@
     "critical-threshold": 80,
     "format": "{temperatureF}°F {icon}",
     "format-icons": ["", "", ""]
-  },
-  "backlight": {
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
   "battery": {
     "states": {
@@ -62,9 +58,8 @@
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    "format-good": "",
-    "format-full": "",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["", "", "", "", ""],
+    "on-click": "plasmawindowed org.kde.plasma.battery"
   },
   "network": {
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -72,7 +67,8 @@
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "on-click": "plasmawindowed org.kde.plasma.networkmanagement"
   },
   "pulseaudio": {
     "scroll-step": 1, // %, can be a float
